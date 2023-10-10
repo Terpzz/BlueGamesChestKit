@@ -1,10 +1,15 @@
-name: ChestKits
-description: An example on how to make chest kits
-
+name: EnderKits
+description: A chest kit plugin.
 main: ChestKits\Main
-version: 1.0
-api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
+version: 1.0.0
+api: [5.0.0]
 
-commands
-  kit
-    description: Get a chest
+commands:
+  kit:
+    description: "server kits"
+    permission: enderkit.cmd
+    
+permissions:
+  enderkits.cmd:
+    description: "Enderkits Perm"
+    default: true
